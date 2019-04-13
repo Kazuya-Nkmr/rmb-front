@@ -1,23 +1,23 @@
-<template>
+  <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
+    <ModalComponent/>
   </div>
 </template>
-
 <script>
+import ModalComponent from '@/components/Modal'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    ModalComponent
+  },
+  mounted () {
+    console.log('a')
+  }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="@/assets/css/common.css"></style>
+<style src="@/assets/css/login.css"></style>
+<style src="@/assets/css/top.css"></style>
+<style src="@/assets/css/create.css"></style>
