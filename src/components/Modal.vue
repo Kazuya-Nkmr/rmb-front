@@ -13,8 +13,7 @@
             <button
               class="rmb-btn half-lineup rmb-cancel"
               data-izi-modal-close
-              data-izi-modal-transition-out="bounceOutDown"
-            >Cancel</button>
+              data-izi-modal-transition-out="bounceOutDown">Cancel</button>
             <button name="Login" type="submit" class="rmb-btn half-lineup next">Login</button>
           </form>
         </section>
@@ -46,23 +45,12 @@
 <script>
 export default {
   name: 'Modal',
-  method: {
-    load : function() {
-      console.log('abc')
-      $('#modal-login').iziModal()
-      $('#modal-adduser').iziModal()
-      $(document).on('click', '.modal-login-trigger', function(event) {
-        event.preventDefault()
-        $('#modal-login').iziModal('open')
-      })
-      $(document).on('lick', '.modal-adduser-trigger', function(event) {
-        event.preventDefault()
-        $('#modal-adduser').iziModal('open')
-      })
+  mounted() {
+    
+  },
+  methods: {
+    load: function() {
     }
   }
 }
 </script>
-<script src='@/assets/lib/jquery-3.4.0.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="@/assets/lib/iziModal.min.css"></link>
-<script src="@/assets/lib/iziModal.min.js" type="text/javascript"></script>
