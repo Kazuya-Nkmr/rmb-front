@@ -45,11 +45,10 @@
 <script>
 export default {
   name: 'Modal',
-  mounted() {
-    
+  mounted () {
   },
   methods: {
-    load: function() {
+    load: function () {
     }
   }
 }
