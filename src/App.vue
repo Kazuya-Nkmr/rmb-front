@@ -1,7 +1,6 @@
   <template>
   <div id="app">
     <router-view/>
-    <Modal/>
   </div>
 </template>
 <script>
@@ -13,7 +12,6 @@ export default {
     Modal
   },
   mounted (){
-    console.log('appa')
   }
 }
 </script>

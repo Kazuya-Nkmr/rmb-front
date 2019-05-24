@@ -1,0 +1,110 @@
+.login-area {
+    margin : 0 auto;
+    margin-top: 150px;
+    width: 400px;
+    height: 320px;
+    padding: 25px;
+    text-align: center;
+}
+
+.rmb-contents {
+    .menu-info {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+        &a {
+            width: 45%;
+            height: 50px;
+            border-radius: 30px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .menu-line {
+            border-color: black;
+            border: 1px;
+        }
+    }
+    .heading {
+        font-size: 20px;
+        color: orange;
+        margin-bottom: 25px;
+    }
+}
+
+.create-area {
+    text-align: center;
+    margin: 10px;
+    .draw-area {
+        margin-top: 20px;
+        #canvas {
+            border-radius: 10px;
+            border: 1px solid gray;
+            background: white;      
+        }
+
+        #color-area {
+            margin-left: 600px;
+            /* width: 500px;
+            height: 500px; */
+            cursor: pointer;
+            ul {
+                li {
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                  
+                  }
+            }
+          }
+    }
+    .btn-area {
+        margin-top: 10px;
+    }
+}
+
+
+
+.rmb-btn {
+    @extend .button;
+    background: orange;
+    border-radius: 50px;
+    color: white;
+    &.large {
+        width: 300px;
+        height: 50px;
+    }
+    &.middle {
+        width: 200px;
+        height: 40px;
+    }
+    &.small {
+        width: 100px;
+        height: 40px;
+    }
+}
+
+.rmb-input {
+    @extend .input;
+
+    &.middle {
+        width: 50%;
+    }
+}
+
+.rmb-is1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rmb-is2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rmb-is3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
